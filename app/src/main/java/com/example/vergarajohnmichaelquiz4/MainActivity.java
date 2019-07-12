@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             fos = new FileOutputStream(file);
             fos.write((txtName.getText().toString() + ",").getBytes());
-            fos.write(txtPassword.getText().toString().getBytes());
+            fos.write((txtPassword.getText().toString() + ",").getBytes());
             fos.write(txtEmail.getText().toString().getBytes());
 
         } catch (FileNotFoundException e) {

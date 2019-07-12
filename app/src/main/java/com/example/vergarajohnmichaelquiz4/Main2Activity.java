@@ -25,6 +25,11 @@ public class Main2Activity extends AppCompatActivity {
         txtPassword = findViewById(R.id.tvPassword);
     }
 
+    public void goPrevious(View v){
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
+
     public void displayExternal(View v) {
         FileInputStream fis = null;
         StringBuffer buffer = new StringBuffer();
